@@ -1,0 +1,104 @@
+:root{
+    --bg-primary:rgba(58, 58, 247, 0.856)
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+
+.border{
+    border: 2px solid red;
+    
+}
+
+form{
+    box-shadow: 1px 1px 10px black;
+}
+.inpts{
+    padding: 40px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 32px;
+    min-height: 16rem;
+    min-width: 24rem;
+}
+
+.ipt{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.inpts .title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.inpts .title  h2{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--bg-primary);
+}
+.inpts .title .underline {
+    height: 4px;
+    width: 40px;
+    background-color: black;
+    border-radius: 40px;
+}
+.ipt label{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.ipt input{
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--bg-primary);
+    padding: 8px;
+}
+
+.ipt input::placeholder{
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.btn input{
+    padding: 8px 16px;
+    border-radius: 40px;
+    outline: none;
+    text-transform: capitalize;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    box-shadow: 0.5px 0.5px 5px black;
+    transition: 1.2s;
+    background-color: var(--bg-primary);
+}
+
+.btn input:hover{
+    background-color: black;
+    color: white;
+    scale: 1.1;
+}
+
